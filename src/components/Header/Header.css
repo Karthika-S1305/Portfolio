@@ -1,0 +1,88 @@
+/* ===== Header Styles ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.header-portfolio .portfolio-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffcc00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-portfolio .portfolio-text span {
+  color: #ffffff;
+}
+
+.header-portfolio .portfolio-text:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Menu */
+.header-fields {
+  display: flex;
+  gap: 30px;
+}
+
+.header-fields a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 5px;
+}
+
+/* Underline Effect on Hover */
+.header-fields a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #ffcc00;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.header-fields a:hover {
+  color: #ffcc00;
+}
+
+.header-fields a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .header-fields {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
