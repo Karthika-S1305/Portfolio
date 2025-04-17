@@ -790,6 +790,15 @@ section h2::after {
   color: #203a43;
 }
 
+.flex-contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact-form-flex{
+  width: 500px;
+}
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {

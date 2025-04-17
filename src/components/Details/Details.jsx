@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Details.css";
 import great from "../../assets/great.jpg";
 import macbook from "../../assets/macbook.jpg";
@@ -13,6 +13,39 @@ const Portfolio = () => {
     { url: great },
     { url: macbook }
   ];
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+    if (result.status === "success") {
+      alert("Message sent successfully!");
+    } else {
+      alert("Error sending message.");
+    }
+  };
 
   return (
     <div className="portfolio">
@@ -238,39 +271,50 @@ const Portfolio = () => {
 
     <section id="contact" className="contact fade-in">
       <h2>Contact Me</h2>
-      <div>
-      <div>
+      <div className="flex-contact">
       {/* Contact Info */}
       <div className="contact-info">
         <p><FaPhoneAlt className="contact-icon" /> <strong>Phone:</strong> +91 93452 13423</p>
         <p><FaEnvelope className="contact-icon" /> <strong>Email:</strong> <a href="mailto:karthika8849@gmail.com">karthika8849@gmail.com</a></p>
         <p><FaMapMarkerAlt className="contact-icon" /> <strong>Location:</strong> Thanjavur, Tamil Nadu, India</p>
       </div>
-      </div>
-        <div>
+      <div className="contact-form-flex">
       {/* Contact Form */}
-        <form className="contact-form">
-          <div className="input-group">
-            <input type="text" placeholder="Name" required />
-          </div>
-          <div className="input-group">
-            <input type="email" placeholder="Email" required />
-          </div>
-          <div className="input-group">
-            <textarea className="Message"  required></textarea>
-          </div>
-          <button type="submit" className="btn">Send Message</button>
-        </form>
-      </div>
-      </div>
-      {/* Social Links */}
-      <div className="social-icons">
-        <a href="https://linkedin.com/in/karthika1305" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-        <a href="https://github.com/Karthika-S1305" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </a>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="input-group">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-group">
+          <textarea
+            name="message"
+            className="Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit" className="btn">
+          Send Message
+        </button>
+      </form>
+    </div>
       </div>
     </section>
     </div>
