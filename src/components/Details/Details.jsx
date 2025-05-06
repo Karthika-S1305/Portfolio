@@ -1,17 +1,19 @@
 import React, {useState} from "react";
 import "./Details.css";
-import great from "../../assets/great.jpg";
-import macbook from "../../assets/macbook.jpg";
+// import great from "../../assets/great.jpg";
+// import macbook from "../../assets/macbook.jpg";
 import credifieImg from "../../assets/credifieImg.webp";
 import latexImg from "../../assets/latexImg.webp";
 import crmImg from "../../assets/crmImg.webp";
 import SimpleImageSlider from "react-simple-image-slider";
+import laptop from "../../assets/laptop.png";
 import { FaCode, FaLinkedin, FaLaptopCode,  FaGraduationCap, FaGithub, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHackerrank, FaBriefcase, FaDatabase, FaCertificate, FaReact, FaNodeJs } from "react-icons/fa";
 
 const Portfolio = () => {
   const images = [
-    { url: great },
-    { url: macbook }
+    { url: laptop},
+    // { url: great },
+    // { url: macbook },
   ];
 
   const [formData, setFormData] = useState({
@@ -53,8 +55,8 @@ const Portfolio = () => {
       {/* Image Slider */}
       <div className="hero-slider">
         <SimpleImageSlider
-          width={1350}
-          height={450}
+          width={1360}
+          height={700}
           images={images}
           showBullets={false}
           showNavs={false}
@@ -64,7 +66,7 @@ const Portfolio = () => {
       <div className="hero-container glassmorphism">
       <div className="glass-box">
         <h1>Hello, I'm <span className="highlight">Karthika S</span></h1>
-        <p className="hero-subtitle">A Passionate Frontend Developer 🚀</p>
+        <p className="hero-subtitle">A Passionate MERN Stack Developer 🚀</p>
         <div className="hero-buttons">
           <a href="#contact" className="btn">Hire Me</a>
           <a href="/Karthika_Resume.pdf" className="btn resume-btn" download>Download Resume</a>
@@ -72,15 +74,12 @@ const Portfolio = () => {
       </div>
     </div>
 
-
       {/* About Section */}
       <section id="about" className="about fade-in">
         <h2>About Me</h2>
         <p>
-          Hello! I’m Karthika S, a passionate Frontend Developer with experience in building scalable web applications using React.js, Node.js, and MongoDB. 
-          I specialize in creating interactive user interfaces, integrating backend services, and optimizing performance for seamless user experiences.
-          My journey in web development has been driven by a deep enthusiasm for problem-solving and innovation.
-        </p>
+        Hello! I’m Karthika S, a dedicated MERN Stack Developer skilled in crafting robust and scalable web applications using <strong>MongoDB, Express.js, React.js, and Node.js</strong>. I build full-stack solutions with clean code practices, RESTful APIs, and responsive UI design. Whether it’s optimizing backend logic or designing dynamic frontends, I thrive on turning complex requirements into efficient applications.
+      </p>
       </section>
 
       {/* Skills Section */}
@@ -89,22 +88,24 @@ const Portfolio = () => {
         <div className="skill-list">
           <span><FaReact /> React.js</span>
           <span>Redux</span>
+          <span><FaNodeJs /> Node.js</span>
+          <span>Express.js</span>
+          <span><FaDatabase /> MongoDB</span>
+          <span>MySQL</span>
+          <span>RESTful APIs</span>
+          <span>Authentication & Authorization</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
           <span>HTML5</span>
           <span>CSS3</span>
           <span>Material UI</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span><FaNodeJs /> Node.js</span>
-          <span>Express.js</span>
-          <span>RESTful APIs</span>
-          <span><FaDatabase /> MongoDB</span>
-          <span>MySQL</span>
           <span>Git & GitHub</span>
-          <span>Visual Studio Code</span>
-          <span>Authentication & Authorization</span>
+          <span>Postman</span>
           <span>UI/UX Design</span>
           <span>Performance Optimization</span>
+          <span>VS Code</span>
         </div>
+
       </section>
 
       <section id="experience" className="experience fade-in">
@@ -118,13 +119,15 @@ const Portfolio = () => {
             <div className="vertical-line"></div>
           </div>
           <div className="experience-content">
-            <h3>Frontend Developer</h3>
+            <h3>MERN Stack Developer</h3>
             <h4>Merkat Intellect Technology Pvt Ltd</h4>
             <span className="experience-date">April 2024 - Present</span>
             <ul>
               <li>Developed microfinance and CRM applications using React.js & Node.js, improving data retrieval efficiency by 30% through API optimizations.</li>
               <li>Integrated secure authentication & authorization mechanisms for user management.</li>
               <li>Designed interactive dashboards and dynamic UI components for improved user engagement.</li>
+              <li>Developed and deployed full-stack applications using MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+              <li>Improved API performance by 30% using Express middleware and MongoDB indexing.</li>
               <li>Collaborated with backend teams to implement RESTful API communication for seamless data transactions.</li>
             </ul>
           </div>
@@ -136,11 +139,12 @@ const Portfolio = () => {
             <FaLaptopCode className="experience-icon" />
           </div>
           <div className="experience-content">
-            <h3>Frontend Developer Intern</h3>
+            <h3>MERN Stack Developer Intern</h3>
             <h4>March 2024</h4>
             <ul>
               <li>Designed a student dashboard with a secure login system and robust authentication features.</li>
               <li>Developed an interactive UI using React.js and Material UI.</li>
+              <li>Built full-stack modules using the MERN stack, integrating MongoDB with Node.js and React-based frontends.</li>
             </ul>
           </div>
         </div>
@@ -156,14 +160,14 @@ const Portfolio = () => {
           <h3>Bachelor of Engineering - Electronics and Communication Engineering</h3>
           <h4>Government College of Engineering, Thanjavur, Tamil Nadu, India</h4>
           <span className="education-date">2019 - 2023</span>
-          <p><strong>GPA:</strong> 8.3</p>
+          <p><strong>CGPA:</strong> 8.3 / 10</p>
         </div>
         <div className="education-card">
           <FaGraduationCap className="education-icon" />
           <h3>Higher Secondary Education (HSC)</h3>
           <h4>P.V Selvaraj girls Higher Secondary School<br/> Thanjavur, Tamil Nadu, India</h4>
           <span className="education-date">2018 - 2019</span>
-          <p><strong>Percentage:</strong> 72.33%</p>
+          <p><strong>Percentage:</strong> 72.33 / 100</p>
         </div>
 
         {/* SSLC (Secondary School) */}
@@ -172,7 +176,7 @@ const Portfolio = () => {
           <h3>Secondary School Leaving Certificate (SSLC)</h3>
           <h4>P.V Selvaraj girls Higher Secondary School<br/> Thanjavur, Tamil Nadu, India</h4>
           <span className="education-date">2016 - 2017</span>
-          <p><strong>Percentage:</strong> 89%</p>
+          <p><strong>Percentage:</strong> 89 / 100</p>
         </div>
         </div>
 
@@ -183,38 +187,41 @@ const Portfolio = () => {
       <section id="projects" className="projects fade-in">
         <h2>Projects</h2>
         <div className="project-cards">
+        <a href="https://revenuintel.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
         <div className="card">
-        <img src={credifieImg} alt="Credifie - Microfinance Application" className="project-img" />
-        <h3>Credifie - Microfinance Application</h3>
-        <h4>April 2024 - August 2024</h4>
+        <img src={crmImg} alt="CRM System" className="project-img" />
+        <h3>Customer Relationship Management (CRM) System</h3>
+        <h4>January 2025 - Present</h4>
         <p>
-          Developed a loan management system for self-help groups using React.js, Node.js, and MongoDB.<br />
-          Implemented authentication, loan disbursement workflows, and group data management.<br />
-          Created custom popups and tables to display financial details dynamically.
+          Developing a CRM with customer management, authentication, and analytics.<br />
+          Using React.js, Node.js, and MySQL to build a scalable and efficient customer tracking system.
         </p>
       </div>
-
+      </a>
+      <a  style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="card">
         <img src={latexImg} alt="Latex Mattress Website" className="project-img" />
-        <h3>Latex Mattress Website</h3>
-        <h4>September 2024 - October 2024</h4>
+        <h3>Latex Mattress E-Commerce site</h3>
+        <h4>October 2024 - December 2024</h4>
         <p>
           Designed and developed an e-commerce platform for a latex mattress brand.<br />
           Implemented product display pages, interactive popups, and responsive UI for better user experience.<br />
           Integrated a contact form with email functionality for customer inquiries.
         </p>
       </div>
-
+      </a>
+      <a style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className="card">
-        <img src={crmImg} alt="CRM System" className="project-img" />
-        <h3>Customer Relationship Management (CRM) System</h3>
-        <h4>November 2024 - Present</h4>
+        <img src={credifieImg} alt="Credifie - Microfinance Application" className="project-img" />
+        <h3>Credifie - Microfinance Application</h3>
+        <h4>April 2024 - September 2024</h4>
         <p>
-          Developing a CRM with customer management, authentication, and analytics.<br />
-          Using React.js, Node.js, and MySQL to build a scalable and efficient customer tracking system.
+          Developed a loan management system for self-help groups using React.js, Node.js, and MongoDB.<br />
+          Implemented authentication, loan disbursement workflows, and group data management.<br />
+          Created custom popups and tables to display financial details dynamically.
         </p>
       </div>
-
+      </a>
       {/* <div className="card">
         <img src={cropImg} alt="Crop Yield Prediction" className="project-img" />
         <h3>Crop Yield Prediction</h3>

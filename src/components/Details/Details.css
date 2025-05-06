@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@ body {
   background-color: #f4f7f9;
   color: #333;
   line-height: 1.6;
-  padding-top: 80px; 
+  padding-top: 0px; 
 }
 
 /* ===== Hero Section ===== */
@@ -174,6 +174,11 @@ section h2 {
   position: relative;
 }
 
+.about p{
+  font-size: 14px;
+  /* color: #000; */
+}
+
 /* Section Titles with Underline Effect */
 section h2::after {
   content: '';
@@ -248,6 +253,8 @@ section h2::after {
   flex-wrap: wrap;
 }
 
+
+
 .card {
   background: white;
   padding: 20px;
@@ -257,7 +264,9 @@ section h2::after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   position: relative;
+  height: 550px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card:hover {
