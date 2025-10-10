@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.32471486.css",
-    "main.js": "/Portfolio/static/js/main.d8adf5b9.js",
+    "main.css": "/Portfolio/static/css/main.8ab3ce45.css",
+    "main.js": "/Portfolio/static/js/main.b8646de9.js",
     "static/js/453.9db171dd.chunk.js": "/Portfolio/static/js/453.9db171dd.chunk.js",
     "static/media/laptop.png": "/Portfolio/static/media/laptop.cf1f116c6a33f5a974a8.png",
     "static/media/macbook.jpg": "/Portfolio/static/media/macbook.879b1a748e79edc01f07.jpg",
@@ -10,12 +10,12 @@
     "static/media/credifie.png": "/Portfolio/static/media/credifie.d2980f5ac2ce25d1ecd4.png",
     "static/media/revenuintel.png": "/Portfolio/static/media/revenuintel.a166e71fe3e7c6bab29b.png",
     "index.html": "/Portfolio/index.html",
-    "main.32471486.css.map": "/Portfolio/static/css/main.32471486.css.map",
-    "main.d8adf5b9.js.map": "/Portfolio/static/js/main.d8adf5b9.js.map",
+    "main.8ab3ce45.css.map": "/Portfolio/static/css/main.8ab3ce45.css.map",
+    "main.b8646de9.js.map": "/Portfolio/static/js/main.b8646de9.js.map",
     "453.9db171dd.chunk.js.map": "/Portfolio/static/js/453.9db171dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32471486.css",
-    "static/js/main.d8adf5b9.js"
+    "static/css/main.8ab3ce45.css",
+    "static/js/main.b8646de9.js"
   ]
 }
