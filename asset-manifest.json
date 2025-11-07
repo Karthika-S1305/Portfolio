@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.81d4196a.css",
-    "main.js": "/Portfolio/static/js/main.a7f75a5a.js",
+    "main.js": "/Portfolio/static/js/main.c1f2c776.js",
     "static/js/453.9db171dd.chunk.js": "/Portfolio/static/js/453.9db171dd.chunk.js",
     "static/media/laptop.png": "/Portfolio/static/media/laptop.082bfc9acbca0c134a7f.png",
+    "static/media/e-commerce.jpg": "/Portfolio/static/media/e-commerce.ae4ee3412e18c548eff7.jpg",
     "static/media/Karthika_image.jpg": "/Portfolio/static/media/Karthika_image.8029c63a0cc1a8dbe19d.jpg",
     "static/media/neithal.png": "/Portfolio/static/media/neithal.64d7d8a887d34a6b6eb9.png",
     "static/media/credifie.png": "/Portfolio/static/media/credifie.d2980f5ac2ce25d1ecd4.png",
@@ -11,11 +12,11 @@
     "static/media/macbook.jpg": "/Portfolio/static/media/macbook.4cefc9be7de516ce859b.jpg",
     "index.html": "/Portfolio/index.html",
     "main.81d4196a.css.map": "/Portfolio/static/css/main.81d4196a.css.map",
-    "main.a7f75a5a.js.map": "/Portfolio/static/js/main.a7f75a5a.js.map",
+    "main.c1f2c776.js.map": "/Portfolio/static/js/main.c1f2c776.js.map",
     "453.9db171dd.chunk.js.map": "/Portfolio/static/js/453.9db171dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81d4196a.css",
-    "static/js/main.a7f75a5a.js"
+    "static/js/main.c1f2c776.js"
   ]
 }
