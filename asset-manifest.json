@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.81d4196a.css",
-    "main.js": "/Portfolio/static/js/main.10b9dfbb.js",
+    "main.css": "/Portfolio/static/css/main.07bdb683.css",
+    "main.js": "/Portfolio/static/js/main.bd596824.js",
     "static/js/453.9db171dd.chunk.js": "/Portfolio/static/js/453.9db171dd.chunk.js",
     "static/media/laptop.png": "/Portfolio/static/media/laptop.082bfc9acbca0c134a7f.png",
     "static/media/e-commerce.jpg": "/Portfolio/static/media/e-commerce.ae4ee3412e18c548eff7.jpg",
     "static/media/Karthika_image.jpg": "/Portfolio/static/media/Karthika_image.8029c63a0cc1a8dbe19d.jpg",
     "static/media/neithal.png": "/Portfolio/static/media/neithal.64d7d8a887d34a6b6eb9.png",
-    "static/media/Karthika_Resume.pdf": "/Portfolio/static/media/Karthika_Resume.c8594022612e328a6e71.pdf",
     "static/media/credifie.png": "/Portfolio/static/media/credifie.d2980f5ac2ce25d1ecd4.png",
+    "static/media/Karthika_Resume.pdf": "/Portfolio/static/media/Karthika_Resume.ed9d5d14eebcb7193690.pdf",
     "static/media/revenuintel.png": "/Portfolio/static/media/revenuintel.a166e71fe3e7c6bab29b.png",
     "static/media/macbook.jpg": "/Portfolio/static/media/macbook.4cefc9be7de516ce859b.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.81d4196a.css.map": "/Portfolio/static/css/main.81d4196a.css.map",
-    "main.10b9dfbb.js.map": "/Portfolio/static/js/main.10b9dfbb.js.map",
+    "main.07bdb683.css.map": "/Portfolio/static/css/main.07bdb683.css.map",
+    "main.bd596824.js.map": "/Portfolio/static/js/main.bd596824.js.map",
     "453.9db171dd.chunk.js.map": "/Portfolio/static/js/453.9db171dd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d4196a.css",
-    "static/js/main.10b9dfbb.js"
+    "static/css/main.07bdb683.css",
+    "static/js/main.bd596824.js"
   ]
 }
